@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/wordOriginal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Original"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/wordTranslated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translated"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnReplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Replace in Entry"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnVocab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save to Vocab"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

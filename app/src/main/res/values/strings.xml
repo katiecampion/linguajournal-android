@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LinguaJournal</string>
+    <string name="nav_entries">Entries</string>
+    <string name="desc_entries">Open entries list</string>
+
+    <string name="nav_add">Add</string>
+    <string name="desc_add">Add new entry</string>
+
+    <string name="nav_vocab">Vocab</string>
+    <string name="desc_vocab">Open vocabulary</string>
+
+    <string name="nav_settings">Settings</string>
+    <string name="desc_settings">Open settings</string>
+
+    <string name="replace_in_entry">Replace in Entry</string>
+    <string name="save_replacement">Save Replacement</string>
+    <string name="save_vocab">Save to Vocabulary</string>
+    <string name="cancel">Cancel</string>
+    <string name="suggested_translation">Suggested Translation:</string>
+
+
+    <string name="add_entry">Add Entry</string>
+</resources>

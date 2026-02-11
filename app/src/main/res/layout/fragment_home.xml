@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- SORT ROW -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/btnSort"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_sort"
+                android:background="@android:color/transparent"
+                android:contentDescription="Sort"
+                android:tint="@color/purple_700"/>
+        </LinearLayout>
+
+        <!-- EMPTY STATE -->
+        <TextView
+            android:id="@+id/homeEmptyState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No entries yet"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:paddingTop="80dp" />
+
+        <Button
+            android:id="@+id/btnEmptyAddEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write your first entry"
+            android:padding="12dp"
+            android:layout_margin="16dp"
+            android:visibility="gone"/>
+
+        <!-- ENTRY LIST -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerEntries"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            tools:listitem="@layout/item_entry"/>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

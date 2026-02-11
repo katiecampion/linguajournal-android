@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- HOME -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.linguajournal.ui.home.HomeFragment"
+        android:label="Home">
+
+        <action
+            android:id="@+id/action_home_to_entryDetail"
+            app:destination="@id/entryDetailFragment" />
+
+        <action
+            android:id="@+id/action_home_to_write"
+            app:destination="@id/writeFragment" />
+
+        <action
+            android:id="@+id/action_home_to_vocab"
+            app:destination="@id/vocabFragment" />
+
+    </fragment>
+
+    <!-- WRITE ENTRY -->
+    <fragment
+        android:id="@+id/writeFragment"
+        android:name="com.example.linguajournal.ui.write.WriteFragment"
+        android:label="Write Entry">
+
+        <argument
+            android:name="entry"
+            app:argType="com.example.linguajournal.data.entities.EntryEntity"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <action
+            android:id="@+id/action_write_to_home"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+
+    <!-- ENTRY DETAIL -->
+    <fragment
+        android:id="@+id/entryDetailFragment"
+        android:name="com.example.linguajournal.ui.detail.EntryDetailFragment"
+        android:label="Entry Detail">
+
+        <argument
+            android:name="entry"
+            app:argType="com.example.linguajournal.data.entities.EntryEntity" />
+
+        <action
+            android:id="@+id/action_entryDetail_to_write"
+            app:destination="@id/writeFragment" />
+    </fragment>
+
+    <!-- VOCAB -->
+    <fragment
+        android:id="@+id/vocabFragment"
+        android:name="com.example.linguajournal.ui.vocab.VocabFragment"
+        android:label="Vocabulary"/>
+
+    <!-- SETTINGS -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.linguajournal.ui.settings.SettingsFragment"
+        android:label="Settings"/>
+</navigation>
