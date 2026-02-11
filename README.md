@@ -1,0 +1,1 @@
+# linguajournal-android
